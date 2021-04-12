@@ -46,54 +46,63 @@ $$g(x) =
 
 Calcula el valor de 
 
--  $\lim_{x \to 1} f(x)$
--  $\lim_{x \to 1} g(x)$
+-  $\lim\limits_{x \to 1} f(x)$
+-  $\lim\limits_{x \to 1} g(x)$
 
 .footnote[Observa que la función $f(x)$ no está definida cuando $x = 1$.]
 
 ---
 
-<iframe src="https://www.geogebra.org/graphing/cvyntgds?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
-
----
-
 # Teoremas sobre límites
 
-Sean $\lim_{x \to a} f(x) = L_1$ y $\lim_{x \to a} g(x) = L_2$, entonces:
+Sean $\lim\limits_{x \to a} f(x) = L_1$ y $\lim\limits_{x \to a} g(x) = L_2$, entonces:
 
 --
 
-- $\lim_{x \to a} c = c$, con $c$ constante
+- $\lim\limits_{x \to a} c = c$, con $c$ constante
 
 --
 
-- $\lim_{x \to a} x = a$
+- $\lim\limits_{x \to a} x = a$
 
 --
 
-- $\lim_{x \to a} c f(x) = c \cdot \lim_{x \to a} f(x) = c \cdot L_1$
+- $\lim\limits_{x \to a} c f(x) = c \cdot \lim\limits_{x \to a} f(x) = c \cdot L_1$
 
 --
 
-- $\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x) = L_1 + L_2$
+- $\lim\limits_{x \to a} [f(x) + g(x)] = \lim\limits_{x \to a} f(x) + \lim\limits_{x \to a} g(x) = L_1 + L_2$
 
 --
 
-- $\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x) = L_1  \cdot L_2$
+- $\lim\limits_{x \to a} [f(x) \cdot g(x)] = \lim\limits_{x \to a} f(x) \cdot \lim\limits_{x \to a} g(x) = L_1  \cdot L_2$
 
 --
 
-- $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}=\frac{L_1}{L_2}$
+- $\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim\limits_{x \to a} f(x)}{\lim\limits_{x \to a} g(x)}=\frac{L_1}{L_2}$
 
 --
 
-- $\lim_{x \to a} [f(x)]^{n} = [\lim_{x \to a} f(x)]^{n}$
+- $\lim\limits_{x \to a} [f(x)]^{n} = [\lim\limits_{x \to a} f(x)]^{n}$
 
 ---
 
 # Ejercicios
 
 Obtener los siguientes límites:
+
+- $\lim\limits_{x \to -1} \frac{3x-7}{2x+5}$
+
+--
+
+- Si $\lim\limits_{x \to -2} f(x) = 3$ y $\lim\limits_{x \to -2} g(x) = 4$.
+  ¿Cuál es el valor de $\lim\limits_{x \to -2} \left[{f(x) + g(x)}\right]$?
+
+--
+
+- Si $\lim\limits_{x \to -10} \left[{3k f(x) -2k g(x)}\right] = -10$.
+  ¿Cuál es el valor de $k$ si $\lim\limits_{x \to -10} f(x) = -10$ y 
+  $\lim\limits_{x \to -10} g(x) = -10$?
 
 ---
 
@@ -104,11 +113,21 @@ elimina mediante una simplificación al factorizar las expresiones dadas.
 
 Obtener los siguientes límites:
 
+- $\lim\limits_{x \to -4} \frac{x^2-x-20}{x^2-16}$
+
+--
+
+- $\lim\limits_{x \to -2} \frac{x+2}{x^2+5x+6}$
+
+--
+
+- $\lim\limits_{x \to 0} \frac{x^2-3x}{x}$
+
 ---
 
 # Formas indeterminadas - parte 2
 
-Si $F(x) = \frac{f(x)}{g(x)}$, los resultados de los límites para las formas $\lim_{x \to a} F(x)$, $\lim_{x \to \infty} F(x)$ y $\lim_{x \to - \infty} F(x)$ son:
+Si $F(x) = \frac{f(x)}{g(x)}$, los resultados de los límites para las formas $\lim\limits_{x \to a} F(x)$, $\lim\limits_{x \to \infty} F(x)$ y $\lim\limits_{x \to - \infty} F(x)$ son:
 
 --
 
@@ -116,23 +135,33 @@ Si $F(x) = \frac{f(x)}{g(x)}$, los resultados de los límites para las formas $\
 
 --
 
-- Si se obtiene una expresión de la forma $\frac{L}{\infty}$, entonces, el límite es infinito.
+- Si se obtiene una expresión de la forma $\frac{\infty}{L}$, entonces, el límite es infinito.
 
 --
 
-- Si se obtiene una expresión de la forma $\frac{L}{\infty}$, entonces, el límite es infinito.
+- Si se obtiene una expresión de la forma $\frac{L}{0}$, entonces, el límite es infinito.
 
 --
 
 <br>
 Obtener los siguientes límites:
 
+- $\lim\limits_{x \to \infty} \frac{6x^3 - 5x^2 - 3x + 2}{4x^3 - 2x+6}$
+
+--
+
+- $\lim\limits_{x \to \infty} \frac{2x^2 - 6x + 7}{5x^3 + 2x - 3}$
+
+--
+
+- $\lim\limits_{x \to \infty} \frac{2x^2 + 3}{x + 1}$
+
 ---
 
 # Formas indeterminadas - parte 2
 ## Teorema
 
-Si $\lim_{x \to \infty} \frac{a_{n} x^{n} + a_{n-1} x^{n-1} + a_{n-2} x^{n-2} + \ldots + a_0}{b_{m} x^{m} + b_{m-1} x^{m-1} + b_{m-2} x^{m-2} + \ldots + b_0}$, entonces:
+Si $\lim\limits_{x \to \infty} \frac{a_{n} x^{n} + a_{n-1} x^{n-1} + a_{n-2} x^{n-2} + \ldots + a_0}{b_{m} x^{m} + b_{m-1} x^{m-1} + b_{m-2} x^{m-2} + \ldots + b_0}$, entonces:
 
 --
 
@@ -146,6 +175,10 @@ Si $\lim_{x \to \infty} \frac{a_{n} x^{n} + a_{n-1} x^{n-1} + a_{n-2} x^{n-2} + 
 
 - Si $n = m$, entonces el límite es $\frac{a_n}{b_n}$
 
+--
+
+<br>
+Cálcula los límites anteriores.
 
 ---
 class: center, middle
