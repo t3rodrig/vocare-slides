@@ -206,18 +206,6 @@ en `\(P\)` es la posición límite (si ésta existe) de la recta secante cuando 
 mueve hacia `\(P\)` a lo largo de la curva
 
 ---
-class:  middle
-
-# Recta tangente
-
-La recta tangente a la curva `\(y = f(x)\)` en el punto `\(P(c, f(c))\)` es aquella recta
-que pasa por `\(P\)` con pendiente
-
-`$$m_{\mathrm{tan}} = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h}$$`
-siempre y cuando este límite exista y no sea `\(\infty\)` o `\(-\infty\)`.
-
----
-class: middle
 
 # Derivada
 
@@ -242,13 +230,166 @@ Determinar una derivada recibe el nombre de derivación.
 # Cálculo de derivadas
 ## Ejemplos
 
-Determina las derivadas de las siguientes funciones
+Determina la derivada de las siguientes funciones
 
 - `\(f(x) = 4x+1\)`
 
 - `\(f(x) = x^2 + 5 x\)`
 
 - `\(f(x) = \frac{1}{x}\)`
+
+---
+
+# Derivadas de funciones algebraicas
+## Reglas de derivación
+
+.pull-left[
+- `\(\frac{d}{dx}(c) = 0\)`
+
+- `\(\frac{d}{dx}(x) = 1\)`
+
+- `\(\frac{d}{dx}(cv)= c \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx}(u \pm v) = \frac{du}{dx} \pm \frac{dv}{dx}\)`
+]
+.pull-right[
+- `\(\frac{d}{dx}(v^n) = n v^{n-1} \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx}(\sqrt{v}) = \frac{1}{2 \sqrt{v}} \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx}(u \cdot v) = \frac{du}{dx} \cdot v + u \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx}(\frac{u}{v})\)`
+]
+
+Donde `\(c\)`: constante; `\(x\)`, `\(u\)`, y `\(v\)`: variables.
+
+???
+El proceso de encontrar la derivada de una función a partir de la definición, puede ser
+engorroso y tedioso. por lo que se presentan las siguientes reglas para determinar derivadas 
+sin tener que usar la definición
+
+---
+
+# Cálculo de derivadas
+## Ejemplos - Funciones algebraicas
+
+Determina la derivada de las siguientes funciones:
+
+.pull-left[
+- `\(y = {x^2+8x-10}\)`
+
+- `\(y=4x^{5/4}-3x^{4/3} + 8\)`
+
+- `\(y=\left(2x-3\right) \left(x+5\right)\)`
+]
+.pull-right[
+- `\(y=\frac{2x+3}{x-5}\)`
+
+- `\(y=\sqrt[3]{5-6x}\)`
+
+- `\(y=(5x-x^2)^3\)`
+]
+
+---
+
+# Derivadas de funciones trigonométricas
+## Reglas de derivación
+
+.pull-left[
+- `\(\frac{d}{dx} \sin{(v)} = \cos{(v)} \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} \cos{(v)} = - \sin{(v)} \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} \tan{(v)}= \sec^{2}{(v)} \cdot \frac{dv}{dx}\)`
+]
+.pull-right[
+- `\(\frac{d}{dx} \cot{(v)} = -\csc^{2}{(v)} \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} \sec{(v)} = \sec{(v)} \cdot \tan{(v)} \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} \csc{(v)} = - \csc{(v)} \cdot \cot{(v)} \cdot \frac{dv}{dx}\)`
+]
+
+Donde `\(v\)`: variable.
+
+???
+Notas
+
+---
+
+# Cálculo de derivadas
+## Ejemplos - Funciones trigonométricas
+
+Determina la derivada de las siguientes funciones:
+
+.pull-left[
+- `\(y=\sin\left(1-3x^2\right)\)`
+
+- `\(y=5 \sin 2x^3\)`
+]
+.pull-right[
+- `\(y=\csc 3x^4\)`
+
+- `\(y=\sec x^2\)`
+]
+
+---
+
+# Derivadas de funciones exponenciales y logarítmicas
+## Reglas de derivación
+
+.pull-left[
+- `\(\frac{d}{dx} e^{v} = e^{v} \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} a^{v} = \ln{a} \cdot a^{v} \cdot \frac{dv}{dx}\)`
+]
+.pull-right[
+- `\(\frac{d}{dx} \ln{(v)} = \frac{1}{v} \cdot \frac{dv}{dx}\)`
+
+- `\(\frac{d}{dx} \log_{a}{(v)} = \frac{1}{\ln{(a)} \cdot v} \cdot \frac{dv}{dx}\)`
+]
+
+donde `\(e\)`: base del logaritmo natural, `\(a\)`: constante, `\(v\)`: variable
+
+---
+
+# Cálculo de derivadas
+## Ejemplos - exponenciales y logarítmicas
+
+Determina la derivada de las siguientes funciones:
+
+.pull-left[
+- `\(y=e^{1-2x}\)`
+
+- `\(y=x^2 + \cos{(x)} - e^x\)`
+
+- `\(y = e^{\tan {(2x)}}\)`
+]
+.pull-right[
+- `\(y = \frac{e^{x} + e^{-x}}{2}\)`
+
+- `\(y = 3^{\sin{(x)}}\)`
+
+- `\(y = 9 \ln \left(x^2 - 4\right)\)`
+]
+
+---
+
+# Regla de la cadena
+
+Sea la función `\(y = g(u)\)` y `\(u = h(x)\)`, entonces la derivada `\(\frac{dy}{dx}\)`, se define como:
+
+`$$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$`
+--
+
+Determina la derivada de las siguientes funciones:
+
+
+- `\(y = 2u^3 - u^2\)`, `\(u = \sqrt{x}\)`
+
+- `\(y = \sin(u^2 - 1)\)`, `\(u = \cos x\)`
+
 
 ---
 class: center, middle
